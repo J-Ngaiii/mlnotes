@@ -1,0 +1,30 @@
+title: Machine Learning Fundamentals and Principles
+email: jngai_@berkeley.edu
+description: >- # this means to ignore newlines until "baseurl"
+  A collection of my notes on core machine learning ideas and some applications. 
+
+# Deployment settings
+baseurl: "/mlnotes"
+url: "https://j-ngaiii.github.io/mlnotes/" 
+
+include:
+  - sections
+
+# automatically apply the layout to every file in /sections/
+defaults:
+  - scope:
+      path: "sections"
+    values:
+      layout: "default"
+
+# disable base math engine so the LaTeX in default.html doesn't bug
+kramdown:
+  math_engine: null
+
+# Theme Selection
+theme: minima
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
